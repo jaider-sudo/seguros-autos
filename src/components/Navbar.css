@@ -1,0 +1,67 @@
+.nabvarComponent {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nabvarComponent-contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nabvarComponent>div {
+    width: 46%;
+    height: inherit;
+    border-bottom: 0.01px solid #0055A4;
+}
+
+.nabvarComponent>div>img {
+    width: 150px;
+    height: 60px;
+}
+
+.nabvarComponent-item2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.linkNavbar,
+.linkNavbarAC {
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.linkNavbarAC::after, .linkNavbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #0055A4;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.linkNavbarAC:hover, .linkNavbar:hover {
+    border-bottom: #0055A4;
+}
+
+.linkNavbarAC:hover::after, .linkNavbar:hover::after{
+    width: 100%;
+}
+

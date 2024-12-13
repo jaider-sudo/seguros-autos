@@ -1,0 +1,66 @@
+.contentFooter {
+    width: 100%;
+    height: 100px;
+    background-color: #2d6df6;
+    display: flex;
+    justify-content: center;
+}
+.contentFooterM{
+    width: 92%;
+    height: inherit;
+}
+.contentFooter-1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.contentFooter-2{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.imgFooter{
+    width: 40px;
+    height: 40px;
+}
+.contentFooter-2-1{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telefonoFooter-1{
+    height: 50%;
+}
+.telefonoFooter-2{
+    font-size: 20px;
+    color: white;
+    height: auto;
+    cursor: pointer;
+}
+.telefonoFooter-2:hover{
+    color: gold;
+}
+
+.contentFooter-2-2, .trabajaConNosotros{
+    height: 100%;
+    width: auto;
+}
+
+.trabajaConNosotros a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.trabajaConNosotros a:hover{
+    color: gold;
+}
