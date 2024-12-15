@@ -1,0 +1,8 @@
+.whatsappPages {
+    position: fixed; /* Fija el contenedor en la pantalla */
+    bottom: 60px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 50%; /* Hace el contenedor redondeado (opcional) */
+    cursor: pointer; /* Cambia el cursor para indicar clic (opcional) */
+}

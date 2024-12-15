@@ -1,10 +1,21 @@
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Whatsapp from '../components/Whatsapp';
+import FormCotizacion from '../components/Form'
+
 
 function Cotizacion (){
     return(
-        <div>
-            <h1>hola</h1>
+        <div className="bodyCotizacion">
+           <Navbar />
+           <div className="cotizacionForm">
+           <FormCotizacion />
+           </div>
+           <div className='whatsappPages'>
+                <Whatsapp />
+            </div>
+           <Footer />
         </div>
     )
 }
-
 export default Cotizacion;

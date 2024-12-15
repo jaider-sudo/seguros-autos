@@ -1,5 +1,6 @@
 import Cotizacion from "../pages/Cotizador"
 import Home from "../pages/Home"
+import Login from "../pages/Login"
 
 export const router = [
     {
@@ -9,5 +10,9 @@ export const router = [
     {
         path: '/Cotizacion',
         element:  <Cotizacion />
+    }, 
+    {
+        path: '/Login',
+        element: <Login />
     }
 ]

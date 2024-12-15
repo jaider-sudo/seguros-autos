@@ -1,6 +1,141 @@
 * {
     margin: 0%;
 }
-div {
-    height: 100vh;
+
+.bodyHome {
+    height: auto;
+}
+  
+ .textoInformativoHome{
+    width: 100%;
+    height:320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .textoInformativoHome div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.644);
+ }
+ .textoInformativoHome > div > h4, strong {
+    color: black;
+ }
+
+ .imgHome {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../public/fondo-seguro-vehicular.jpg.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    
+ }
+ .imgHomeInfo {
+    width: 36%;
+    background-color: #0055A4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 60px;
+ }
+ .imgHomeInfoCurva {
+    background-color: #0055A4;
+    width: 9%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+ }
+
+ .imgHomeInfoCien{
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #0055A4;
+ }
+ .imgHomeInfoText-1, .imgHomeInfoText-2 {
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .imgHomeInfoText-1{
+    color: white;
+ }
+ .imgHomeInfoText-2{
+    color: yellow;
+ }
+ .imgHomeInfoText-3 {
+    color: white;
+    font-size: 26px;
+ }
+
+ .imgHomeInfoDescuento{
+    width: 200px;
+    animation: descuento 4s ease-in-out infinite; 
+ }
+@keyframes descuento {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+ .imgHomeBoton {
+    width: 100%;
+}
+
+.imgHomeBoton div {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgHomeBotonLink {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0055A4;
+    font-weight: 700;
+}
+
+.imgHomeBotonimg {
+    width: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.imgHomeBoton div:hover .imgHomeBotonimg {
+    animation: flecha 2s ease-in-out infinite;
+}
+
+@keyframes flecha {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
 }

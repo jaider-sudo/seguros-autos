@@ -1,30 +1,43 @@
 .nabvarComponent {
     display: flex;
     width: 100%;
-    position: fixed;
-    height: 70px;
+    margin-bottom: 10px;
+    height: 85px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 10px;
+    gap: 5px;
+    z-index: 1;
+    font-family:'Montserrat', sans-serif;
 }
 
-.nabvarComponent-contenedor {
+.nabvarComponent-content1{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.nabvarComponent>div {
+.nabvarComponent-item1, .nabvarComponent-item2 {
     width: 46%;
     height: inherit;
-    border-bottom: 0.01px solid #0055A4;
+    border-bottom: 0.01px solid black;
+    /* #0055A4; */
 }
 
-.nabvarComponent>div>img {
+.imgNabvar {
     width: 150px;
     height: 60px;
+}
+.nabvarComponent-item1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #0055A4;
+    font-size: 20px;
 }
 
 .nabvarComponent-item2 {
@@ -45,7 +58,7 @@
     transition: color 0.3s ease;
 }
 
-.linkNavbarAC::after, .linkNavbar::after {
+.linkNavbarAC::after, .linkNavbar::after, .homeLinkNabvar::after  {
     content: "";
     position: absolute;
     bottom: 0;
@@ -57,11 +70,43 @@
     transform: translateX(-50%);
 }
 
-.linkNavbarAC:hover, .linkNavbar:hover {
+.linkNavbarAC:hover, .linkNavbar:hover, .homeLinkNabvar:hover {
     border-bottom: #0055A4;
 }
 
-.linkNavbarAC:hover::after, .linkNavbar:hover::after{
+.linkNavbarAC:hover::after, .linkNavbar:hover::after, .homeLinkNabvar:hover::after{
     width: 100%;
 }
 
+.nabvarComponent-content2{
+    width: 92%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.homeLinkNabvar, .activeHome{
+    color: #0055A4;
+    text-decoration: none;
+}
+.homeLinkNabvar {
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.activeHome {
+    border-bottom: solid 2px #0055A4;
+}
+
+.active{
+    border-bottom: solid 2px #0055A4;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
